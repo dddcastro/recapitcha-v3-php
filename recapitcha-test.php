@@ -1,3 +1,4 @@
+define("RECAPTCHA_V3_SECRET_KEY", 'YOUR-SECRET-HERE');
 public function check_recapitcha($token){
 	    // call curl to POST request
 		$ch = curl_init();
