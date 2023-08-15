@@ -17,3 +17,12 @@ public function check_recapitcha($token){
 			return false;
 		}
 	}
+
+<script src="https://www.google.com/recaptcha/api.js?render=SITE-CODE-HERE"></script>
+<script>
+grecaptcha.ready(function() {
+	grecaptcha.execute('SITE-CODE-HERE', {action: 'contato'}).then(function(token) {
+		$('#token').val(token);
+	});
+});
+</script>
